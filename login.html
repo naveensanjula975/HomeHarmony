@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Log In</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-</head>
-<body>
-    <!-- navbar -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  </head>
+  <body>
     <header>
-        <div class="nav container">
-            <!-- logo -->
-            <a href="index.html" class="logo"><i class="bx bx-home"></i>R State</a>
-            
-            <!-- Sign Up button  -->
-            <a href="sign-up.html" class="btn">Sign Up</a>
-        </div>
+      <div class="nav container">
+        <a href="index.html" class="logo"><i class="bx bx-home"></i>Future Home</a>
+        <a href="sign-up.html" class="btn">Sign Up</a>
+      </div>
     </header>
 
     <div class="login container">
-        <div class="login-container">
-            <h2>Login To Continue</h2>
-            <p>Log in with your data that you entered br during your registration</p>
-            <!-- Login Form -->
-            <form action="">
-                <span>Enter youe email address</span>
-                <input type="email" name="" id="" placeholder="email@gmail.com" required>
-                <span>Enter youe password</span>
-                <input type="password" name="" id="" placeholder="Password" required>
-                <input type="submit" value="Log In" class="button">
-                <a href="#">Forget Password?</a>
-            </form>
-            <a href="sign-up.html" class="btn">Sign up now</a>
-        </div>
-        <!-- Log In Image -->
-        <div class="login-image">
-            <img src="img/login.svg" alt="">
-        </div>
-    </div>
+      <div class="login-container">
+        <h2>Login To Continue</h2>
+        <p>
+          Sign in with the email and password you provided during registration.
+        </p>
+        <form id="loginForm" action="">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="user@example.com" required/>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" required/>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Log In" class="button" />
+            <a href="sign-up.html" class="forgot-password">Forgot Password?</a>
+          </div>
+        </form>
 
+        <a href="sign-up.html" class="btn">Sign up now</a>
+      </div>
+      <div class="login-image">
+        <img src="img/login.jpg" alt="Login Image" class="img-login" />
+      </div>
+    </div>
 
     <!-- Footer -->
     <section class="footer">
-        <div class="footer-container container">
-            <h2>R. State</h2>
-            <div class="footer-box">
-                <h3>Quick Links</h3>
-                <a href="#">Agency</a>
-                <a href="#">Building</a>
-                <a href="#">Rests</a>
-            </div>
-            <div class="footer-box">
-                <h3>Location</h3>
-                <a href="#">Colombo</a>
-                <a href="#">Kandy</a>
-                <a href="#">Galle</a>
-            </div>
-            <div class="footer-box">
-                <h3>Contact</h3>
-                <a href="#">+94 771234567</a>
-                <a href="#">email@gmail.com</a>
-                <div class="social">
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
-                    <a href="#"><i class='bx bxl-twitter' ></i></a>
-                    <a href="#"><i class='bx bxl-instagram' ></i></a>
-                </div>
-            </div>
+      <div class="footer-container container">
+        <h2>Future Home</h2>
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+          <a href="#">Agency</a>
+          <a href="#">Building</a>
+          <a href="#">Rests</a>
         </div>
+        <div class="footer-box">
+          <h3>Location</h3>
+          <a href="#">Colombo</a>
+          <a href="#">Kandy</a>
+          <a href="#">Galle</a>
+        </div>
+        <div class="footer-box">
+          <h3>Contact</h3>
+          <a href="#">+94 771234567</a>
+          <a href="#">info@Futurehome.com</a>
+          <div class="social">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+          </div>
+        </div>
+      </div>
     </section>
-
     <!-- Copyright -->
     <div class="copyright">
-        <p>&#169; Naveen All Right Reserved.</p>
+      <p>&#169; 2024 Future Home. All Rights Reserved.</p>
     </div>
     <script src="main.js"></script>
-
-</body>
+  </body>
 </html>
