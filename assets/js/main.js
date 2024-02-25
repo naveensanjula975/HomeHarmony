@@ -4,16 +4,21 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = "/index.html";
   }
 
-  document
-    .getElementById("loginForm")
-    .addEventListener("submit", redirectToHomePage);
-  document
-    .getElementById("signupForm")
-    .addEventListener("submit", redirectToHomePage);
-  document
-    .getElementById("forgotPasswordForm")
-    .addEventListener("submit", redirectToHomePage);
+  const loginForm = document.getElementById("loginForm");
+  const signupForm = document.getElementById("signupForm");
+  const forgotPasswordForm = document.getElementById("forgotPasswordForm");
+
+  if (loginForm) {
+    loginForm.addEventListener("submit", redirectToHomePage);
+  }
+  if (signupForm) {
+    signupForm.addEventListener("submit", redirectToHomePage);
+  }
+  if (forgotPasswordForm) {
+    forgotPasswordForm.addEventListener("submit", redirectToHomePage);
+  }
 });
+
 
 // scroll reveal
 const animate = ScrollReveal({
@@ -24,10 +29,10 @@ const animate = ScrollReveal({
 });
 
 animate.reveal(".nav");
-animate.reveal(".home-text", { origin: "left" });
 animate.reveal(".home", { origin: "right" });
+animate.reveal(".home-text", { origin: "left" });
 animate.reveal(".about", { origin: "bottom" });
-animate.reveal(".btn-home, .sales, .properties, .newsletter, .login", {
+animate.reveal(".sales, .properties, .newsletter, .login", {
     interval: 100,
     }
 );
