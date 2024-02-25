@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("signupForm")
     .addEventListener("submit", redirectToHomePage);
+  document
+    .getElementById("forgotPasswordForm")
+    .addEventListener("submit", redirectToHomePage);
 });
 
 // scroll reveal
