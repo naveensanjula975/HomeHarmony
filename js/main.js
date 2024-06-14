@@ -6,14 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
   if (loginForm) {
     loginForm.addEventListener("submit", function (event) {
       event.preventDefault();
-      window.location.href = "/index.html";
+      window.location.href = "index.html";
     });
   }
 
   if (forgotPasswordForm) {
     forgotPasswordForm.addEventListener("submit", function (event) {
       event.preventDefault();
-      window.location.href = "/index.html";
+      window.location.href = "index.html";
     });
   }
 
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     signupForm.addEventListener("submit", function (event) {
       event.preventDefault();
       if (validateForm()) {
-        window.location.href = "/index.html";
+        window.location.href = "index.html";
       }
     });
   }
